@@ -19,7 +19,7 @@ This web application, written in Rails, completes the following [task](https://g
 
 * Once you have followed the instructions for [installations](INSTALLATION.md), the PUMA server would be up and running.
 * Open a browser and navigate to `localhost:<port>/posts`, for lazy loading in posts, according to user's consent(on scroll event). Lazy loading in posts is throttled using [Loadash](https://lodash.com/)
-* Navigate to `localhost:<port>/posts/lazy_load_more_button`, for lazy loading in posts, according to user's consent(on clicking a button) to retrieve more information from backend.
+* Navigate to `localhost:<port>/posts/load_more_button`, for lazy loading in posts, according to user's consent(on clicking a button) to retrieve more information from backend.
 * Navigate to `localhost:<port>/posts/lazy_load_unveil_images`, for lazy loading in images, implemented using [Unveil JS](https://github.com/luis-almeida/unveil)
 * Navigate to `localhost:<port>/posts/lazy_load_images`, for lazy loading in images, using a custom JS.
 
