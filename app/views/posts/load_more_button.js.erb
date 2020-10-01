@@ -1,0 +1,6 @@
+$('.cards-wrapper').append('<%= j render @posts %>');
+<% if @posts.next_page %>
+$('#paginate-load-more .pagination').replaceWith('<%= j will_paginate @posts %>');
+<% else %>
+$('#paginate-load-more .pagination, #load-more-button').remove();
+<% end %>
