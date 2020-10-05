@@ -34,6 +34,8 @@ class PostsController < ApplicationController
 
   def lazy_load_images; end
 
+  def lazy_load_images_native; end
+
   # GET /posts/1
   # GET /posts/1.json
   def show; end

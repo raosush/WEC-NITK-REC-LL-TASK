@@ -34,3 +34,4 @@ This web application, written in Rails, completes the following [task](https://g
 * [CSS for images](https://codepen.io/FilipVitas/pen/pQBYQd)
 * [Loading GIF](https://dribbble.com/shots/6629424-register-loading-animation)
 * [Loading GIF Resource](https://loading.io)
+* [Native Lazy Loading](https://web.dev/browser-level-image-lazy-loading/)

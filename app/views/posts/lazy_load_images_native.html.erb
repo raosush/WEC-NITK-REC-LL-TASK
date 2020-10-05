@@ -1,0 +1,32 @@
+<style>
+  .gallery {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+    grid-auto-rows: 400px;
+    grid-gap: 30px;
+    padding: 20px;
+  }
+  .gallery .card {
+    grid-area: span 1/span 1;
+  }
+  .gallery img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: #000;
+  }
+</style>
+<div class="gallery">
+  <% (1..100).each do |x| %>
+    <div class="bg-dark text-white" style="box-shadow: 0 16px 20px 0 rgba(0,0,0,0.5); border-radius: 15px; border: none !important;">
+      <% if [1..9].include?(x) %>
+        <img src="https://source.unsplash.com/random/<%= x %>" alt="Card Image"/>
+      <% else %>
+        <img src="https://source.unsplash.com/random/<%= x %>" loading="lazy" alt="Card Image"/>
+      <% end %>
+    </div>
+  <% end %>
+</div>
