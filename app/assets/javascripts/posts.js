@@ -1,6 +1,6 @@
 $(document).ready(function () {
     if ($('#paginate-infinite-scrolling').size() > 0) {
-        $(window).on('scroll', _.throttle(lazyLoad, 100));
+        $(window).on('scroll', lazyLoad);
     }
 
     if ($('#paginate-load-more').size() > 0) {
