@@ -7,7 +7,7 @@ $(document).ready(function () {
         $('#load-more-button').show().click(function() {
             let more_posts_url = $('#paginate-load-more .pagination .next_page a').attr('href');
             $this = $(this);
-            $this.html('<img src="/assets/ajax-loader.gif" alt="Loading..." title="Loading..." />').addClass('disabled');
+            $this.html('<img src="/ajax-loader.gif" alt="Loading..." title="Loading..." />').addClass('disabled');
             $.getScript(more_posts_url, function() {
                 if ($this) {
                     $this.text('Load more posts').removeClass('disabled');
@@ -20,7 +20,7 @@ $(document).ready(function () {
 function lazyLoad() {
     let more_posts_url = $('#paginate-infinite-scrolling .pagination .next_page a').attr('href');
     if (more_posts_url && ($(window).scrollTop() > $(document).height() - $(window).height() - 60)) {
-        $('#ajax-loader').html('<img src="/assets/ajax-loader.gif" alt="Loading..." title="Loading..." />');
+        $('#ajax-loader').html('<img src="/ajax-loader.gif" alt="Loading..." title="Loading..." />');
         $.getScript(more_posts_url);
     }
 }
