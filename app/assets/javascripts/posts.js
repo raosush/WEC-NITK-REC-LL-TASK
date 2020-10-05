@@ -19,7 +19,7 @@ $(document).ready(function () {
 /* Script to lazy load posts using pagination URLs */
 function lazyLoad() {
     let more_posts_url = $('#paginate-infinite-scrolling .pagination .next_page a').attr('href');
-    if (more_posts_url && ($(window).scrollTop() > $(document).height() - $(window).height() - 90)) {
+    if (more_posts_url && ($(window).scrollTop() > $(document).height() - $(window).height() - 30)) {
         $('#ajax-loader').html('<img src="/ajax-loader.gif" alt="Loading..." title="Loading..." />');
         $.getScript(more_posts_url);
     }
