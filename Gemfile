@@ -25,8 +25,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 # Will Paginate -> To paginate records.
 gem 'will_paginate'
-# Bootstrap SASS to import Bootstrap CSS files
-gem 'bootstrap-sass'
+# Bootstrap to import Bootstrap CSS files
+gem 'bootstrap'
 # Bootstrap Will Paginate to import stylesheets to style paginating URLs
 gem 'bootstrap-will_paginate'
 # Responders to support multiple MIME types using the same controller action

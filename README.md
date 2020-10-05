@@ -15,6 +15,10 @@ This web application, written in Rails, completes the following [task](https://g
 * Lazy loading for posts has been implemented by pagination at the backend and AJAX requests to the controller action, on a scroll event.
 * Lazy loading for images has been done using two methods - 1) Unveil JS 2) Custom JS
 
+## Web Application
+
+* Link to [web application](https://arcane-shore-65473.herokuapp.com) deployed on [Heroku](https://devcenter.heroku.com)
+
 ## Testing
 
 * Once you have followed the instructions for [installations](INSTALLATION.md), the PUMA server would be up and running.
@@ -28,3 +32,5 @@ This web application, written in Rails, completes the following [task](https://g
 * [Infinite Scrolling](https://github.com/josefzacek/infinite-scrolling)
 * [CSS for Posts](https://codepen.io/Booligoosh/pen/mKPpQp)
 * [CSS for images](https://codepen.io/FilipVitas/pen/pQBYQd)
+* [Loading GIF](https://dribbble.com/shots/6629424-register-loading-animation)
+* [Loading GIF Resource](https://loading.io)
