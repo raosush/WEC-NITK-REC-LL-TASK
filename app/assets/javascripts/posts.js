@@ -22,8 +22,11 @@ function lazyLoad() {
         return ;
     }
     let more_posts_url = $('#paginate-infinite-scrolling .pagination .next_page a').attr('href');
-    console.log($(window).scrollTop() > $(document).height() - $(window).height() - 80);
-    if (more_posts_url && ($(window).scrollTop() > $(document).height() - $(window).height() - 80)) {
+    let bufferSpace = 80;
+    if (window.screen.width < 600) {
+        bufferSpace = 180;
+    }
+    if (more_posts_url && ($(window).scrollTop() > $(document).height() - $(window).height() - bufferSpace)) {
         window.pagination_loading = true;
         $('#ajax-loader').html('<img src="/loader.gif" alt="Loading..." title="Loading..." style="display: block; margin-right: auto; margin-left: auto; width: 100px; height: 100px;" />');
         $.getScript(more_posts_url).always(function () {
