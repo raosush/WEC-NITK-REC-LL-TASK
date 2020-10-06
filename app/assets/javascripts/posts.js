@@ -22,6 +22,7 @@ function lazyLoad() {
         return ;
     }
     let more_posts_url = $('#paginate-infinite-scrolling .pagination .next_page a').attr('href');
+    console.log($(window).scrollTop() > $(document).height() - $(window).height() - 80);
     if (more_posts_url && ($(window).scrollTop() > $(document).height() - $(window).height() - 80)) {
         window.pagination_loading = true;
         $('#ajax-loader').html('<img src="/loader.gif" alt="Loading..." title="Loading..." style="display: block; margin-right: auto; margin-left: auto; width: 100px; height: 100px;" />');
